@@ -251,9 +251,9 @@ We'll need two lambda functions. Refer to the examples in aws-cli section around
 
 You can alternatively set this up directly in the AWS console using the UI.
 
-#### my-vaccine-collector and my-vaccine-reducer
+#### `my-vaccine-collector` and `my-vaccine-reducer`
 
-Ensure that you deploy the `collector` or `reducer` package to this function and that it is running:
+Ensure that you deploy the `collector` or `reducer` package to separate Lambda Functions and that they are running:
 - Node.js 14.x Runtime
 - Handler is defined as `collector.handler` or `reducer.handler` 
 - Under Configuration > Permissions, the execution role is set to the role you created during setup (`my-vaccine-data-prod` for example)
