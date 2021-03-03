@@ -62,7 +62,7 @@ The reducer's job is to read each county artifact in S3 from the `/counties` pre
 This allows us to isolate the larger task of combining the entire state's data, such that we don't have one function invocation whose job is to do all of the work which could take a lot of time as we iterate through each individual county (and would cause high traffic against MyTurn).
 
 ### Event Payload to Reducer Lambda Function
-[Example Reducer Event Payload [JSON]](./collector/events/reducer-event.json)
+[Example Reducer Event Payload [JSON]](./reducer/events/reducer-event.json)
 
 ## Local Development
 
