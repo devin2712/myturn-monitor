@@ -1,5 +1,7 @@
 # Vaccine Availability Aggregator: California MyTurn State System
 
+Production deployed example: [data.json](https://mtcavax.s3-us-west-1.amazonaws.com/data.json)
+
 ## Overview
 
 These services collect data for the CA state vaccination system (MyTurn) to expose a consolidated JSON payload to show the latest vaccine availabilities for all supported vaccine clinics on the platform in all 58 counties.
