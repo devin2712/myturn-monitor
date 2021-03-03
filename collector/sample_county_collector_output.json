@@ -1,0 +1,207 @@
+{
+  "Los Angeles": {
+    "data_collection_time": "2021-03-03T14:15:18.029Z",
+    "locations": [
+      {
+        "id": "a2ut0000006eUgaAAE",
+        "address": "150 N. Reno Street\r\nLos Angeles, CA 90026",
+        "lat": 34.0721,
+        "long": -118.28,
+        "name": "QueensCare Health Centers - Echo Park 1st/2nd dose Moderna TUE",
+        "hours": [
+          { "days": ["tue"], "localStart": "12:30:00", "localEnd": "15:30:00" }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZE1BQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      {
+        "id": "a2ut0000006eUgGAAU",
+        "address": "1910 Magnolia Ave, Suite 101, Los Angeles, CA 90007",
+        "lat": 34.0397,
+        "long": -118.286,
+        "name": "St. John's Well Child and Family Center - Magnolia",
+        "hours": [
+          { "days": ["fri"], "localStart": "17:00:00", "localEnd": "19:15:00" },
+          { "days": ["thu"], "localStart": "17:00:00", "localEnd": "19:15:00" },
+          { "days": ["wed"], "localStart": "17:00:00", "localEnd": "19:15:00" },
+          { "days": ["tue"], "localStart": "17:00:00", "localEnd": "19:15:00" }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      {
+        "id": "a2ut0000006a92gAAA",
+        "address": "5151 State University Drive Los Angeles, CA 90032",
+        "lat": 34.062,
+        "long": -118.174,
+        "name": "Los Angeles - CalOES (Walk Up 2a)",
+        "hours": [
+          { "days": ["mon"], "localStart": "09:00:00", "localEnd": "19:00:00" },
+          { "days": ["wed"], "localStart": "09:00:00", "localEnd": "19:00:00" },
+          { "days": ["tue"], "localStart": "09:00:00", "localEnd": "19:00:00" }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      {
+        "id": "a2ut0000006a92pAAA",
+        "address": "5151 State University Drive Los Angeles, CA 90032",
+        "lat": 34.062,
+        "long": -118.174,
+        "name": "Los Angeles - CalOES (Drive Thru 2a)",
+        "hours": [
+          { "days": ["mon"], "localStart": "09:00:00", "localEnd": "19:00:00" },
+          { "days": ["wed"], "localStart": "09:00:00", "localEnd": "19:00:00" },
+          { "days": ["tue"], "localStart": "09:00:00", "localEnd": "19:00:00" }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      {
+        "id": "a2ut0000006eUg1AAE",
+        "address": "6818 Avalon Blvd, Los Angeles, CA 90003",
+        "lat": 33.9775,
+        "long": -118.265,
+        "name": "St. John's Well Child and Family Center - Avalon",
+        "hours": [
+          { "days": ["fri"], "localStart": "08:30:00", "localEnd": "17:00:00" },
+          { "days": ["thu"], "localStart": "08:30:00", "localEnd": "17:00:00" },
+          { "days": ["wed"], "localStart": "08:30:00", "localEnd": "17:00:00" }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      {
+        "id": "a2ut0000006a9KKAAY",
+        "address": "The Forum: \r\n3900 W Manchester Blvd, \r\nInglewood, CA  90305",
+        "lat": 33.9582,
+        "long": -118.342,
+        "name": "Mega POD Forum - ALL ELIGIBLE GROUPS - Pfizer",
+        "hours": [
+          { "days": ["sun"], "localStart": "09:30:00", "localEnd": "14:30:00" },
+          { "days": ["sat"], "localStart": "13:00:00", "localEnd": "16:00:00" },
+          { "days": ["thu"], "localStart": "14:00:00", "localEnd": "16:00:00" },
+          { "days": ["wed"], "localStart": "09:30:00", "localEnd": "16:00:00" },
+          { "days": ["tue"], "localStart": "13:00:00", "localEnd": "16:00:00" }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      {
+        "id": "a2ut0000006a9LNAAY",
+        "address": "The Forum: \r\n3900 W Manchester Blvd., \r\nInglewood, CA  90305",
+        "lat": 33.9582,
+        "long": -118.342,
+        "name": "Mega POD Forum - FOOD & AGRICULTURE ONLY - Pfizer",
+        "hours": [
+          { "days": ["thu"], "localStart": "09:30:00", "localEnd": "16:00:00" },
+          { "days": ["tue"], "localStart": "09:30:00", "localEnd": "16:00:00" }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      {
+        "id": "a2ut0000006a9K5AAI",
+        "address": "LA County Office of Education: 9300 Imperial Highway, Downey, CA 90242",
+        "lat": 33.9165,
+        "long": -118.129,
+        "name": "Mega POD LACOE/Downey - ALL ELIGIBLE GROUPS - Pfizer",
+        "hours": [
+          { "days": ["sun"], "localStart": "09:30:00", "localEnd": "14:30:00" },
+          { "days": ["sat"], "localStart": "13:00:00", "localEnd": "16:00:00" },
+          { "days": ["thu"], "localStart": "14:00:00", "localEnd": "16:00:00" },
+          { "days": ["wed"], "localStart": "09:30:00", "localEnd": "16:00:00" },
+          { "days": ["tue"], "localStart": "13:00:00", "localEnd": "16:00:00" }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      {
+        "id": "a2ut0000006a9LDAAY",
+        "address": "LA County Office of Education: \r\n9300 Imperial Highway, \r\nDowney, CA 90242",
+        "lat": 33.9165,
+        "long": -118.129,
+        "name": "Mega POD LACOE/Downey - FOOD & AGRICULTURE ONLY - Pfizer",
+        "hours": [
+          { "days": ["thu"], "localStart": "09:30:00", "localEnd": "16:00:00" },
+          { "days": ["tue"], "localStart": "09:30:00", "localEnd": "16:00:00" }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      {
+        "id": "a2ut0000006a9KvAAI",
+        "address": "Balboa Sports Complex: \r\n17015 Burbank Blvd., \r\nEncino, CA  91316",
+        "lat": 34.1736,
+        "long": -118.503,
+        "name": "Mega POD Balboa/Encino - FOOD & AGRICULTURE ONLY - Pfizer",
+        "hours": [
+          { "days": ["thu"], "localStart": "13:00:00", "localEnd": "15:00:00" },
+          { "days": ["tue"], "localStart": "09:30:00", "localEnd": "15:30:00" }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      }
+    ]
+  }
+}

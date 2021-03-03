@@ -1,0 +1,15 @@
+{
+  "name": "my-vaccine-reducer",
+  "version": "1.0.0",
+  "description": "MyTurn CA Vaccine Availability Reducer",
+  "main": "reducer.js",
+  "author": "Devin Nguyen",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "npm install && npm prune --production && zip -r reducer.zip reducer.js node_modules package.json package-lock.json",
+    "deploy": "aws lambda update-function-code --function-name my-vaccine-reducer --zip-file fileb://reducer.zip"
+  }
+}

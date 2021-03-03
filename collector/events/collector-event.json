@@ -1,0 +1,6 @@
+{
+  "counties": [
+    "San Diego"
+  ],
+  "destinationBucket": "S3_BUCKET_NAME_HERE"
+}

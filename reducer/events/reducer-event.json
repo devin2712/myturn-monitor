@@ -1,0 +1,5 @@
+{
+  "sourceBucket": "S3_BUCKET_NAME_HERE",
+  "sourceBucketPrefix": "counties/",
+  "destinationBucket": "S3_BUCKET_NAME_HERE"
+}
