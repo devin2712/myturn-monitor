@@ -14,9 +14,9 @@ As part of data collection, we are assuming eligibility for the vaccine and that
 We are using `75 and older` and `Other` in the query, as this will continue to remain an eligible profile. We just need a valid user cohort to look up availabilities for all locations.
 
 ### Geography Selection
-We are using hard-coded latitude and longitude values in the location geo search depending on the county. That is, to search for LA county locations we are querying for available locations from a fixed lat/long in the middle of downtown LA. This will give us a list of locations in and around LA for LA county.
+We are using hard-coded latitude and longitude values in the location geo search depending on the county. That is, to search for LA county locations we are querying for available locations from a fixed lat/long in the middle of downtown LA. This will give us a list of locations in and around LA for LA county. In some instances, the vaccine locations returned will be a different neighboring county if there are no locations in the actual county being searched.
 
-To add support for more counties, we just need to define fixed lat/long values in the collector script for each county. Refer to the `COUNTY_LAT_LONG` constant.
+Refer to the `COUNTY_LAT_LONG` constant in [collector.js](./collector/collector.js) to see what values are being used.
 
 ### Dose Availability Criteria
 
@@ -24,9 +24,9 @@ For both Pfizer and Moderna, there is a two dose requirement where both appointm
 
 #### Dose 1 Availability Criteria
 
-MyTurn will sometimes return dose 1 availabilities that can have one of these issues:
+MyTurn will sometimes return **Dose 1** availabilities that can have one of these issues:
 
-1. Today's date will be included in the **available dates** but all the time slots for that day will have already occurred; therefore, there are actually no availabilities for today. If today's date is included in the dose 1 availability response, we will do an additional check to look into the available time slots for the day and remove today's date if there are no time slots that are _after_ the data collection time.
+1. Today's date will be included in the **available dates** but all the time slots for today will have already occurred; therefore, there are actually no availabilities for today. If today's date is included in the **Dose 1** availability response, we will do an additional check to look into the available time slots for today and remove today's date if there are no slots that are _after_ the data collection time (_"right now"_ when the script runs).
 
 2. Dates will be included that do not have time slot availabilities. We will do additional checks to ensure there is at least one time slot available and include the set of time slots in the JSON payload.
 
@@ -34,11 +34,11 @@ MyTurn will sometimes return dose 1 availabilities that can have one of these is
 
 Dose 2 appointment availabilities are dependent on when the patient receives the first dose.
 
-As such, we will only search for dose 2 availabilities 21 (or 28) days after the first available date that is offering the first dose. That is, within the dose 1 dates provided, we see that "2021-01-01" is the first date out of all the dates that has a time slot available to book. We will then add 21 or 28 days to this date and that is the "startDate" for our dose 2 query.
+As such, we will only search for **Dose 2** availabilities 21 (or 28) days after the first available date that is offering the first dose. That is, within the **Dose 1** dates provided, we see that "2021-01-01" is the first date that has a time slot available to book, so we will add 21 or 28 days to "2021-01-01" and look for **Dose 2** availabilities after "2021-01-22".
 
-This is because both doses are booked at the same time, so if there is an availability for dose 2 tomorrow, it won't be useful as that will be too soon to book — it needs to be 21 (or 28) days after the first dose.
+This is because both doses are booked at the same time on MyTurn, so if there is an availability for **Dose 2** tomorrow, it won't be useful as that will be too soon to book — it needs to be 21 (or 28) days after the first dose.
 
-We will do a cheap check to see if the word `moderna` is in the location title to decide whether to add 21 or 28 days. We default to 21 days.
+We will do a cheap check to see if the word `moderna` is in the location title to decide whether to add 21 or 28 days. "Moderna" isn't guaranteed to be in the location name but it seems to be how they're differentiating, so as a backup, we default to 21 days.
 
 ## Architecture
 
