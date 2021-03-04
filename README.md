@@ -14,9 +14,9 @@ As part of data collection, we are assuming eligibility for the vaccine and that
 We are using `75 and older` and `Other` in the query, as this will continue to remain an eligible profile. We just need a valid user cohort to look up availabilities for all locations.
 
 ### Geography Selection
-We are using hard-coded latitude and longitude values in the location geo search depending on the county. That is, to search for LA county locations we are querying for available locations from a fixed lat/long in the middle of downtown LA. This will give us a list of locations in and around LA for LA county.
+We are using hard-coded latitude and longitude values in the location geo search depending on the county. That is, to search for LA county locations we are querying for available locations from a fixed lat/long in the middle of downtown LA. This will give us a list of locations in and around LA for LA county. In some instances, the vaccine locations returned will be a different neighboring county if there are no locations in the actual county being searched.
 
-To add support for more counties, we just need to define fixed lat/long values in the collector script for each county. Refer to the `COUNTY_LAT_LONG` constant.
+Refer to the `COUNTY_LAT_LONG` constant in [collector.js](./collector/collector.js) to see what values are being used.
 
 ### Dose Availability Criteria
 
