@@ -257,13 +257,24 @@ const revisedDose1Availabilities = async (
   dose1Availabilities,
   vaccineData
 ) => {
-  // Format date to YYYYY-MM-DD
+  // Format date to YYYYY-MM-DD - current date in location timezone
   const todayDate = new Date();
-  const todayDateString = `${todayDate.getFullYear()}-${(
-    todayDate.getMonth() + 1
-  )
-    .toString()
-    .padStart(2, "0")}-${todayDate.getDate().toString().padStart(2, "0")}`;
+
+  // Need to get current date in the vaccine location's timezone and manually format to YYYY-MM-DD (which isn't
+  //  guaranteed to be the locale's format for dates).
+  const todayDateYear = todayDate.toLocaleString("en-US", {
+    year: "numeric",
+    timeZone: timezone,
+  });
+  const todayDateMonth = todayDate.toLocaleString("en-US", {
+    month: "2-digit",
+    timeZone: timezone,
+  });
+  const todayDateDay = todayDate.toLocaleString("en-US", {
+    day: "2-digit",
+    timeZone: timezone,
+  });
+  const todayDateString = `${todayDateYear}-${todayDateMonth}-${todayDateDay}`;
 
   // Format date to YYYY-MM-DD
   const firstDoseDate = normalizedFirstDoseDate.toISOString().slice(0, 10);
