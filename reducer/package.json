@@ -6,6 +6,7 @@
   "author": "Devin Nguyen",
   "license": "MIT",
   "dependencies": {
+    "zlib": "^1.0.5"
   },
   "devDependencies": {},
   "scripts": {

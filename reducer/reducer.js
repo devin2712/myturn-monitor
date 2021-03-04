@@ -1,6 +1,7 @@
 // Combine all county data sets into a central data.json dataset
 
 const AWS = require("aws-sdk");
+const zlib = require("zlib");
 const s3 = new AWS.S3();
 
 const getObject = async (key, bucket) => {
@@ -13,7 +14,7 @@ const getObject = async (key, bucket) => {
       })
       .promise();
 
-    return (file.Body.toString("utf-8"));
+    return file.Body.toString("utf-8");
   } catch (error) {
     console.log("Error getting object: ", error);
   }
@@ -71,14 +72,24 @@ exports.handler = async (event, context, callback) => {
     return memo;
   }, {});
 
+  const buffer = Buffer.from(JSON.stringify(finalCollection), "utf-8");
+  const compressedData = zlib.gzipSync(buffer, (err, response) => {
+    if (err) {
+      console.log(err);
+    } else {
+      return response;
+    }
+  });
+
   // Upload consolidated dataset to S3
   try {
     const destinationParams = {
       Bucket: event.destinationBucket,
       Key: "data.json",
-      Body: JSON.stringify(finalCollection),
+      Body: compressedData,
       ContentType: "application/json; charset=utf-8",
       CacheControl: "max-age=120",
+      ContentEncoding: "gzip",
     };
 
     await s3.putObject(destinationParams).promise();
