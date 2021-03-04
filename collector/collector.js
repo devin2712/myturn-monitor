@@ -126,6 +126,11 @@ const fetchVaccineData = async () => {
       },
       data: data,
     });
+
+    // Error response from MyTurn, skip this job.
+    if (response.status !== 200) {
+      return null;
+    }
     MYTURN_API_COUNT++;
 
     // If the user is eligible, MyTurn will respond with a "hashed" vaccineData string
@@ -176,6 +181,11 @@ const myTurnLocationSearch = async (todayDate, county, vaccineData) => {
       },
       data: locationData,
     });
+
+    // Error from MyTurn: Skip this county!
+    if (response.status !== 200) {
+      return null;
+    }
     MYTURN_API_COUNT++;
 
     if (response.data.locations && response.data.locations.length > 0) {
@@ -446,7 +456,9 @@ const myTurnAvailabilityCheckForLocation = async (
         .slice(
           0,
           10
-        )} [${numOfDaysBetweenDoses} days from ${normalizedFirstActualDose1Date.toISOString().slice(0, 10)}]`
+        )} [${numOfDaysBetweenDoses} days from ${normalizedFirstActualDose1Date
+        .toISOString()
+        .slice(0, 10)}]`
     );
 
     const dose2Response = await axios({
@@ -502,6 +514,12 @@ const getCountyData = async (todayDate, countyName, vaccineData) => {
     countyName,
     vaccineData
   );
+
+  // Error from MyTurn: skip this county
+  if (locations === null) {
+    return null;
+  }
+
   console.log(`Found ${locations.length} locations for ${countyName}`);
 
   const locationsWithAvailability = await Promise.all(
@@ -558,6 +576,13 @@ exports.handler = async (event, context, callback) => {
         countyName,
         vaccineData
       );
+
+      // Received error status from MyTurn: skip this county
+      if (countyData === null) {
+        console.log(`ERROR: Got an error status from MyTurn for ${countyName}; skipping and not updating county file.`);
+        return Promise.resolve();
+      }
+
       const countyFile = { [countyName]: countyData };
       // Remove spaces for filename. "Los Angeles" => "losangeles.json"
       const countyFilename =
