@@ -25,7 +25,7 @@ const listObjects = async (prefix, bucketName) => {
     const response = await s3
       .listObjectsV2({
         Bucket: bucketName,
-        MaxKeys: 15,
+        MaxKeys: 100,
         Prefix: prefix,
       })
       .promise();
