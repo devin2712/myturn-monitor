@@ -5,7 +5,7 @@ const s3 = new AWS.S3();
 // Logging how many API calls we are making outbound to MyTurn for info.
 let MYTURN_API_COUNT = 0;
 
-// Selected lat/long of county geo location to search for location availabilities. 
+// Selected lat/long of county geo location to search for location availabilities.
 const COUNTY_LAT_LONG = {
   Alameda: [37.7652076, -122.2416355],
   Alpine: [32.846668, -116.807269],
@@ -69,7 +69,6 @@ const COUNTY_LAT_LONG = {
   Yolo: [38.7318481, -121.8077431],
   Yuba: [39.1254479, -121.5855207],
 };
-
 
 /**
  *  Our goal is to just get a valid vaccineData response that we'll reuse to
@@ -580,7 +579,9 @@ exports.handler = async (event, context, callback) => {
 
       // Received error status from MyTurn: skip this county
       if (countyData === null) {
-        console.log(`ERROR: Got an error status from MyTurn for ${countyName}; skipping and not updating county file.`);
+        console.log(
+          `ERROR: Got an error status from MyTurn for ${countyName}; skipping and not updating county file.`
+        );
         return Promise.resolve();
       }
 
