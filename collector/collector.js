@@ -199,6 +199,7 @@ const myTurnLocationSearch = async (todayDate, county, vaccineData) => {
         type: locationInfo.type,
         timezone: locationInfo.timezone,
         vaccineData: locationInfo.vaccineData,
+        externalURL: locationInfo.externalURL,
       }));
     } else {
       return [];
@@ -536,6 +537,20 @@ const getCountyData = async (todayDate, countyName, vaccineData) => {
   const locationsWithAvailability = await Promise.all(
     locations.map(async (location) => {
       console.log(`Processing ${location.id} ${location.name}`);
+
+      // If it's an external vaccination site, we won't know how many available slots there are,
+      //  so just pass along the location info with the external URL.
+      if (location.type && location.type === "ThirdPartyBooking") {
+        return {
+          ...location,
+          availability: {
+            dose1Availabilities: [],
+            dose2Availabilities: [],
+          },
+          hasAvailabilities: null,
+          notes: "Unable to fetch availabilities. Visit external provider website for more information."
+        };
+      }
 
       // Cheap check for Moderna which is 28
       const numOfDays = location.name.toLowerCase().includes("moderna")
