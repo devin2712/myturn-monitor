@@ -832,5 +832,2457 @@
   "Santa Clara": {
     "data_collection_time": "2021-03-03T02:59:45.531Z",
     "locations": []
+  },
+  "Tulare": {
+    "data_collection_time": "2021-03-04T00:11:25.319Z",
+    "locations": [
+      {
+        "id": "a2ut0000006a9N4AAI",
+        "address": "1900 West Olive Avenue, Porterville, CA 93257",
+        "lat": 36.0663,
+        "long": -119.06,
+        "name": "Tulare - Porterville Memorial Building - Moderna - Both Dose",
+        "hours": [
+          {
+            "days": ["sun"],
+            "localStart": "09:00:00",
+            "localEnd": "18:00:00"
+          },
+          {
+            "days": ["sat"],
+            "localStart": "09:00:00",
+            "localEnd": "18:00:00"
+          },
+          {
+            "days": ["fri"],
+            "localStart": "09:00:00",
+            "localEnd": "18:00:00"
+          },
+          {
+            "days": ["thu"],
+            "localStart": "09:00:00",
+            "localEnd": "18:00:00"
+          },
+          {
+            "days": ["wed"],
+            "localStart": "11:00:00",
+            "localEnd": "18:00:00"
+          }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZE1BQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [
+            {
+              "date": "2021-03-05",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-06",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-07",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            }
+          ],
+          "dose2Availabilities": [
+            {
+              "date": "2021-04-02",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-04-03",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-04-04",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            }
+          ]
+        },
+        "hasAvailabilities": true
+      },
+      {
+        "id": "a2ut0000006a980AAA",
+        "address": "145 N Magnolia Street, Woodlake, CA 93286",
+        "lat": 36.4147,
+        "long": -119.098,
+        "name": "Woodlake Community Center - Must live/work in Tulare County",
+        "hours": [
+          {
+            "days": ["sat"],
+            "localStart": "10:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["fri"],
+            "localStart": "10:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["thu"],
+            "localStart": "10:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["wed"],
+            "localStart": "10:00:00",
+            "localEnd": "19:00:00"
+          }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      {
+        "id": "a2ut0000006a97uAAA",
+        "address": "712 E Washington Ave Earlimart, CA 93219",
+        "lat": 35.885,
+        "long": -119.27,
+        "name": "Earlimart Veterans Memorial Building - Must live/work in Tulare County",
+        "hours": [
+          {
+            "days": ["fri"],
+            "localStart": "10:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["mon"],
+            "localStart": "10:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["thu"],
+            "localStart": "10:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["sun"],
+            "localStart": "10:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["sat"],
+            "localStart": "10:00:00",
+            "localEnd": "19:00:00"
+          }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZ1VBQVUiLCJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [
+            {
+              "date": "2021-03-05",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-06",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-07",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-08",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-11",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-12",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-13",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-14",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-15",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-18",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-19",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-21",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-22",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-25",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-26",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-27",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-28",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-29",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            }
+          ],
+          "dose2Availabilities": [
+            {
+              "date": "2021-03-26",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-27",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-28",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-29",
+              "slots": [
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            }
+          ]
+        },
+        "hasAvailabilities": true
+      },
+      {
+        "id": "a2ut0000006a9MLAAY",
+        "address": "249 S. Alta Ave Dinuba, CA 93618",
+        "lat": 36.5447,
+        "long": -119.396,
+        "name": "Dinuba Memorial Building - Must live/work in Tulare County - Moderna",
+        "hours": [
+          {
+            "days": ["sun"],
+            "localStart": "09:00:00",
+            "localEnd": "18:00:00"
+          },
+          {
+            "days": ["sat"],
+            "localStart": "09:00:00",
+            "localEnd": "18:00:00"
+          },
+          {
+            "days": ["fri"],
+            "localStart": "09:00:00",
+            "localEnd": "18:00:00"
+          },
+          {
+            "days": ["thu"],
+            "localStart": "09:00:00",
+            "localEnd": "18:00:00"
+          },
+          {
+            "days": ["wed"],
+            "localStart": "09:00:00",
+            "localEnd": "18:00:00"
+          }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZE1BQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [
+            {
+              "date": "2021-03-05",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-06",
+              "slots": [
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-03-07",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            }
+          ],
+          "dose2Availabilities": [
+            {
+              "date": "2021-04-02",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-04-03",
+              "slots": [
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            },
+            {
+              "date": "2021-04-04",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 1800
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 1800
+                }
+              ]
+            }
+          ]
+        },
+        "hasAvailabilities": true
+      }
+    ]
   }
 }
