@@ -127,12 +127,12 @@ const fetchVaccineData = async () => {
       data: data,
     });
 
+    MYTURN_API_COUNT++;
+
     // Error response from MyTurn, skip this job.
     if (response.status !== 200) {
       return null;
     }
-    MYTURN_API_COUNT++;
-
     // If the user is eligible, MyTurn will respond with a "hashed" vaccineData string
     //  that will be used in subsequent responses to identify the user eligibility profile.
     if (
@@ -182,11 +182,11 @@ const myTurnLocationSearch = async (todayDate, county, vaccineData) => {
       data: locationData,
     });
 
+    MYTURN_API_COUNT++;
     // Error from MyTurn: Skip this county!
     if (response.status !== 200) {
       return null;
     }
-    MYTURN_API_COUNT++;
 
     if (response.data.locations && response.data.locations.length > 0) {
       return response.data.locations.map((locationInfo) => ({
@@ -548,7 +548,8 @@ const getCountyData = async (todayDate, countyName, vaccineData) => {
             dose2Availabilities: [],
           },
           hasAvailabilities: null,
-          notes: "Unable to fetch availabilities. Visit external provider website for more information."
+          notes:
+            "Unable to fetch availabilities. Visit external provider website for more information.",
         };
       }
 
