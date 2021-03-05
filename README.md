@@ -9,7 +9,7 @@ These services collect data for the CA state vaccination system (MyTurn) to expo
 ## MyTurn Data Collection Methodology & Assumptions
 
 ### Patient Eligibility
-As part of data collection, we are assuming eligibility for the vaccine and that vaccine availabilities are not segmented by patient cohort. The script can be adapted if inventory is in fact segmented, but collection would be much slower (as we would need to query each location for each possible cohort [16-49+Education, 16+49+FoodAgriculture, etc.]).
+As part of data collection, we are assuming eligibility for the vaccine and that vaccine availabilities are not segmented by patient cohort. The script can be adapted if inventory is in fact segmented, but collection would be much slower (as we would need to query each location for each possible cohort [16-49+Education, 16-49+FoodAgriculture, etc.]).
 
 We are using `75 and older` and `Other` in the query, as this will continue to remain an eligible profile. We just need a valid user cohort to look up availabilities for all locations.
 
