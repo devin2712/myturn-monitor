@@ -6,6 +6,7 @@
   "author": "Devin Nguyen",
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "^2.857.0",
     "axios": "^0.21.1"
   },
   "devDependencies": {},
