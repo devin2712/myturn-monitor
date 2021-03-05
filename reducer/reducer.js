@@ -38,14 +38,10 @@ const listObjects = async (prefix, bucketName) => {
 };
 
 // process is:
-//    - grab every key within bucketName/counties
-//    - read the json file and take all the first key from the file (the county) and add it to a central {}
+//    - list every key within the key `bucketName/counties` in bucket `event.sourceBucket`
+//    - read the json file (each key) and take all the first JSON object key from the file (the county name) and add it to a central {}
 //    - write the central {} data to data.json in root bucket and upload to s3
 exports.handler = async (event, context, callback) => {
-  // List all counties from data collection => List all objects in event.sourceBucket
-  // Get each key in that bucket
-  // Write out to destinationBucket a data.json file
-
   const counties = await listObjects(
     event.sourceBucketPrefix,
     event.sourceBucket
