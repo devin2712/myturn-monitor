@@ -1,56 +1,2095 @@
 {
-  "Los Angeles": {
-    "data_collection_time": "2021-03-03T14:15:18.029Z",
-    "locations": [
-      {
-        "id": "a2ut0000006eUgaAAE",
-        "address": "150 N. Reno Street\r\nLos Angeles, CA 90026",
-        "lat": 34.0721,
-        "long": -118.28,
-        "name": "QueensCare Health Centers - Echo Park 1st/2nd dose Moderna TUE",
+  "Alameda": {
+    "data_collection_time": "2021-03-07T01:18:08.733Z",
+    "locations": {
+      "a2ut0000006eUhnAAE": {
+        "id": "a2ut0000006eUhnAAE",
+        "address": "7000 Coliseum Way, Oakland, California, 94621",
+        "lat": 37.7503,
+        "long": -122.203,
+        "name": "Alameda County - CalOES (Drive Thru 3)",
         "hours": [
-          { "days": ["tue"], "localStart": "12:30:00", "localEnd": "15:30:00" }
-        ],
-        "type": "OnlineBooking",
-        "timezone": "America/Los_Angeles",
-        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZE1BQVUiXQ==",
-        "availability": {
-          "dose1Availabilities": [],
-          "dose2Availabilities": []
-        },
-        "hasAvailabilities": false
-      },
-      {
-        "id": "a2ut0000006eUgGAAU",
-        "address": "1910 Magnolia Ave, Suite 101, Los Angeles, CA 90007",
-        "lat": 34.0397,
-        "long": -118.286,
-        "name": "St. John's Well Child and Family Center - Magnolia",
-        "hours": [
-          { "days": ["fri"], "localStart": "17:00:00", "localEnd": "19:15:00" },
-          { "days": ["thu"], "localStart": "17:00:00", "localEnd": "19:15:00" },
-          { "days": ["wed"], "localStart": "17:00:00", "localEnd": "19:15:00" },
-          { "days": ["tue"], "localStart": "17:00:00", "localEnd": "19:15:00" }
+          { "days": ["wed"], "localStart": "09:00:00", "localEnd": "19:00:00" },
+          { "days": ["tue"], "localStart": "09:00:00", "localEnd": "19:00:00" },
+          { "days": ["mon"], "localStart": "09:00:00", "localEnd": "19:00:00" },
+          { "days": ["sun"], "localStart": "09:00:00", "localEnd": "19:00:00" },
+          { "days": ["sat"], "localStart": "09:00:00", "localEnd": "19:00:00" }
         ],
         "type": "OnlineBooking",
         "timezone": "America/Los_Angeles",
         "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
         "availability": {
-          "dose1Availabilities": [],
-          "dose2Availabilities": []
+          "dose1Availabilities": [
+            {
+              "date": "2021-03-08",
+              "slots": [
+                {
+                  "localStartTime": "09:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 63
+                },
+                {
+                  "localStartTime": "09:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 48
+                },
+                {
+                  "localStartTime": "09:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 14
+                },
+                {
+                  "localStartTime": "10:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 42
+                },
+                {
+                  "localStartTime": "10:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 49
+                },
+                {
+                  "localStartTime": "10:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 9
+                },
+                {
+                  "localStartTime": "10:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "11:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 34
+                },
+                {
+                  "localStartTime": "11:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 9
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 37
+                },
+                {
+                  "localStartTime": "11:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "11:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "12:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "12:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 27
+                },
+                {
+                  "localStartTime": "12:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "12:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 42
+                },
+                {
+                  "localStartTime": "13:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "13:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 25
+                },
+                {
+                  "localStartTime": "13:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "13:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 49
+                },
+                {
+                  "localStartTime": "14:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "14:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 20
+                },
+                {
+                  "localStartTime": "14:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "14:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 25
+                },
+                {
+                  "localStartTime": "15:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "15:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 19
+                },
+                {
+                  "localStartTime": "15:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "15:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 38
+                },
+                {
+                  "localStartTime": "16:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "16:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 12
+                },
+                {
+                  "localStartTime": "16:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "16:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 27
+                },
+                {
+                  "localStartTime": "17:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "17:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 33
+                },
+                {
+                  "localStartTime": "17:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "17:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 48
+                },
+                {
+                  "localStartTime": "18:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "18:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 47
+                },
+                {
+                  "localStartTime": "18:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "18:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 55
+                }
+              ]
+            },
+            {
+              "date": "2021-03-09",
+              "slots": [
+                {
+                  "localStartTime": "09:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 27
+                },
+                {
+                  "localStartTime": "09:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 15
+                },
+                {
+                  "localStartTime": "09:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "09:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 32
+                },
+                {
+                  "localStartTime": "10:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "10:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 13
+                },
+                {
+                  "localStartTime": "10:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "10:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "11:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 21
+                },
+                {
+                  "localStartTime": "11:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 15
+                },
+                {
+                  "localStartTime": "11:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "11:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 25
+                },
+                {
+                  "localStartTime": "12:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "12:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "12:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "12:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 18
+                },
+                {
+                  "localStartTime": "13:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 9
+                },
+                {
+                  "localStartTime": "13:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "13:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 13
+                },
+                {
+                  "localStartTime": "14:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "14:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "14:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "14:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "15:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "15:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "15:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 9
+                },
+                {
+                  "localStartTime": "16:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "16:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 13
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 9
+                },
+                {
+                  "localStartTime": "16:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "16:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "17:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "17:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "17:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "17:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 9
+                },
+                {
+                  "localStartTime": "18:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "18:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 19
+                },
+                {
+                  "localStartTime": "18:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "18:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 21
+                }
+              ]
+            },
+            {
+              "date": "2021-03-10",
+              "slots": [
+                {
+                  "localStartTime": "09:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 18
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 12
+                },
+                {
+                  "localStartTime": "09:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "09:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "10:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "10:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 19
+                },
+                {
+                  "localStartTime": "10:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "10:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 20
+                },
+                {
+                  "localStartTime": "11:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "11:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "11:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "11:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "12:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "12:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "12:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "12:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 22
+                },
+                {
+                  "localStartTime": "13:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "13:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "13:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 17
+                },
+                {
+                  "localStartTime": "14:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "14:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "14:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "14:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 18
+                },
+                {
+                  "localStartTime": "15:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "15:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "15:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "15:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 13
+                },
+                {
+                  "localStartTime": "16:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "16:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "16:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "16:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "17:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "17:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "17:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "17:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "18:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "18:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 15
+                },
+                {
+                  "localStartTime": "18:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 7
+                }
+              ]
+            }
+          ],
+          "dose2Availabilities": [
+            {
+              "date": "2021-03-29",
+              "slots": [
+                {
+                  "localStartTime": "09:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 63
+                },
+                {
+                  "localStartTime": "09:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 49
+                },
+                {
+                  "localStartTime": "09:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "10:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 41
+                },
+                {
+                  "localStartTime": "10:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 12
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 45
+                },
+                {
+                  "localStartTime": "10:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "10:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "11:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 29
+                },
+                {
+                  "localStartTime": "11:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 35
+                },
+                {
+                  "localStartTime": "11:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "11:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "12:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "12:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 23
+                },
+                {
+                  "localStartTime": "12:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "12:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 36
+                },
+                {
+                  "localStartTime": "13:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "13:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 26
+                },
+                {
+                  "localStartTime": "13:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 52
+                },
+                {
+                  "localStartTime": "14:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "14:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "14:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "14:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 28
+                },
+                {
+                  "localStartTime": "15:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "15:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 15
+                },
+                {
+                  "localStartTime": "15:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "15:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 35
+                },
+                {
+                  "localStartTime": "16:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "16:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 13
+                },
+                {
+                  "localStartTime": "16:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "16:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 36
+                },
+                {
+                  "localStartTime": "17:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "17:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 32
+                },
+                {
+                  "localStartTime": "17:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "17:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 45
+                },
+                {
+                  "localStartTime": "18:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "18:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 45
+                },
+                {
+                  "localStartTime": "18:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "18:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 64,
+                  "capacityTaken": 55
+                }
+              ]
+            },
+            {
+              "date": "2021-03-30",
+              "slots": [
+                {
+                  "localStartTime": "09:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 29
+                },
+                {
+                  "localStartTime": "09:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 15
+                },
+                {
+                  "localStartTime": "09:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "09:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 32
+                },
+                {
+                  "localStartTime": "10:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "10:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 13
+                },
+                {
+                  "localStartTime": "10:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "10:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "11:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 22
+                },
+                {
+                  "localStartTime": "11:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 13
+                },
+                {
+                  "localStartTime": "11:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "11:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 25
+                },
+                {
+                  "localStartTime": "12:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "12:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "12:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "12:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 19
+                },
+                {
+                  "localStartTime": "13:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "13:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 15
+                },
+                {
+                  "localStartTime": "14:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "14:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "14:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "14:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 17
+                },
+                {
+                  "localStartTime": "15:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "15:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "15:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "16:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "16:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "16:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "16:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "17:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "17:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "17:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "17:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "18:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "18:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 17
+                },
+                {
+                  "localStartTime": "18:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "18:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 34,
+                  "capacityTaken": 24
+                }
+              ]
+            },
+            {
+              "date": "2021-03-31",
+              "slots": [
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 22
+                },
+                {
+                  "localStartTime": "09:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "09:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "09:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "10:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 14
+                },
+                {
+                  "localStartTime": "10:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 21
+                },
+                {
+                  "localStartTime": "10:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "10:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 18
+                },
+                {
+                  "localStartTime": "11:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "11:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "11:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "11:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 17
+                },
+                {
+                  "localStartTime": "12:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "12:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "12:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "12:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 18
+                },
+                {
+                  "localStartTime": "13:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "13:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "13:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 13
+                },
+                {
+                  "localStartTime": "14:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "14:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "14:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 9
+                },
+                {
+                  "localStartTime": "15:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "15:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "15:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "15:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 12
+                },
+                {
+                  "localStartTime": "16:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "16:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 17
+                },
+                {
+                  "localStartTime": "16:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "16:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "17:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "17:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "17:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "17:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "17:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "17:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "18:00:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 18
+                },
+                {
+                  "localStartTime": "18:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "18:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "18:30:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 14
+                },
+                {
+                  "localStartTime": "18:40:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "18:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 23,
+                  "capacityTaken": 22
+                }
+              ]
+            }
+          ]
         },
-        "hasAvailabilities": false
+        "hasAvailabilities": true
       },
-      {
-        "id": "a2ut0000006a92gAAA",
-        "address": "5151 State University Drive Los Angeles, CA 90032",
-        "lat": 34.062,
-        "long": -118.174,
-        "name": "Los Angeles - CalOES (Walk Up 2a)",
+      "a2ut0000006a92aAAA": {
+        "id": "a2ut0000006a92aAAA",
+        "address": "BART Coliseum Station, 7200 San Leandro St, Oakland, CA 94621",
+        "lat": 37.7538,
+        "long": -122.197,
+        "name": "Alameda County - CalOES (Walk up 2)",
         "hours": [
           { "days": ["mon"], "localStart": "09:00:00", "localEnd": "19:00:00" },
           { "days": ["wed"], "localStart": "09:00:00", "localEnd": "19:00:00" },
-          { "days": ["tue"], "localStart": "09:00:00", "localEnd": "19:00:00" }
+          { "days": ["tue"], "localStart": "09:00:00", "localEnd": "19:00:00" },
+          { "days": ["sun"], "localStart": "09:00:00", "localEnd": "19:00:00" },
+          { "days": ["sat"], "localStart": "09:00:00", "localEnd": "19:00:00" }
         ],
         "type": "OnlineBooking",
         "timezone": "America/Los_Angeles",
@@ -61,147 +2100,1515 @@
         },
         "hasAvailabilities": false
       },
-      {
-        "id": "a2ut0000006a92pAAA",
-        "address": "5151 State University Drive Los Angeles, CA 90032",
-        "lat": 34.062,
-        "long": -118.174,
-        "name": "Los Angeles - CalOES (Drive Thru 2a)",
+      "a2ut0000006eUhiAAE": {
+        "id": "a2ut0000006eUhiAAE",
+        "address": "747 Howard St, San Francisco, CA, 94103",
+        "lat": 37.7836,
+        "long": -122.401,
+        "name": "San Francisco Moscone Center (SOUTH) 1",
         "hours": [
-          { "days": ["mon"], "localStart": "09:00:00", "localEnd": "19:00:00" },
-          { "days": ["wed"], "localStart": "09:00:00", "localEnd": "19:00:00" },
-          { "days": ["tue"], "localStart": "09:00:00", "localEnd": "19:00:00" }
+          { "days": ["wed"], "localStart": "08:00:00", "localEnd": "17:00:00" },
+          { "days": ["tue"], "localStart": "08:00:00", "localEnd": "17:00:00" },
+          { "days": ["mon"], "localStart": "08:00:00", "localEnd": "17:00:00" },
+          { "days": ["fri"], "localStart": "08:00:00", "localEnd": "17:00:00" },
+          { "days": ["thu"], "localStart": "08:00:00", "localEnd": "17:00:00" }
         ],
         "type": "OnlineBooking",
         "timezone": "America/Los_Angeles",
         "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
         "availability": {
-          "dose1Availabilities": [],
-          "dose2Availabilities": []
+          "dose1Availabilities": [
+            {
+              "date": "2021-03-08",
+              "slots": [
+                {
+                  "localStartTime": "08:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 44
+                },
+                {
+                  "localStartTime": "08:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 36
+                },
+                {
+                  "localStartTime": "09:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 21
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 33
+                },
+                {
+                  "localStartTime": "09:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 19
+                },
+                {
+                  "localStartTime": "10:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 27
+                },
+                {
+                  "localStartTime": "11:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 23
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 21
+                },
+                {
+                  "localStartTime": "11:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "12:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "12:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 41
+                },
+                {
+                  "localStartTime": "13:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "13:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 37
+                },
+                {
+                  "localStartTime": "14:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 15
+                },
+                {
+                  "localStartTime": "14:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 43
+                },
+                {
+                  "localStartTime": "15:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 19
+                },
+                {
+                  "localStartTime": "15:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "16:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 17
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 41
+                }
+              ]
+            },
+            {
+              "date": "2021-03-09",
+              "slots": [
+                {
+                  "localStartTime": "08:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 30
+                },
+                {
+                  "localStartTime": "08:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "08:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "08:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 22
+                },
+                {
+                  "localStartTime": "09:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "09:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 20
+                },
+                {
+                  "localStartTime": "10:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 9
+                },
+                {
+                  "localStartTime": "10:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 27
+                },
+                {
+                  "localStartTime": "11:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "11:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 18
+                },
+                {
+                  "localStartTime": "12:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "12:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "13:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "13:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "14:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "14:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 25
+                },
+                {
+                  "localStartTime": "15:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "15:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "16:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "16:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 22
+                }
+              ]
+            },
+            {
+              "date": "2021-03-10",
+              "slots": [
+                {
+                  "localStartTime": "08:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 26
+                },
+                {
+                  "localStartTime": "08:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "08:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "08:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 20
+                },
+                {
+                  "localStartTime": "09:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "09:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 22
+                },
+                {
+                  "localStartTime": "10:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 17
+                },
+                {
+                  "localStartTime": "10:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 22
+                },
+                {
+                  "localStartTime": "11:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "11:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 28
+                },
+                {
+                  "localStartTime": "12:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "12:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 17
+                },
+                {
+                  "localStartTime": "13:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "13:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "14:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "14:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "15:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "15:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 21
+                },
+                {
+                  "localStartTime": "16:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "16:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 25
+                }
+              ]
+            },
+            {
+              "date": "2021-03-11",
+              "slots": [
+                {
+                  "localStartTime": "08:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "08:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "08:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "08:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "09:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "09:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "10:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "10:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "11:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "11:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "12:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "12:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "13:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "13:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "14:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "15:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "16:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 8
+                },
+                {
+                  "localStartTime": "16:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 54,
+                  "capacityTaken": 11
+                }
+              ]
+            }
+          ],
+          "dose2Availabilities": [
+            {
+              "date": "2021-03-29",
+              "slots": [
+                {
+                  "localStartTime": "08:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 44
+                },
+                {
+                  "localStartTime": "08:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 23
+                },
+                {
+                  "localStartTime": "09:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 26
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 36
+                },
+                {
+                  "localStartTime": "09:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 44
+                },
+                {
+                  "localStartTime": "10:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 31
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 41
+                },
+                {
+                  "localStartTime": "11:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 19
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 16
+                },
+                {
+                  "localStartTime": "11:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 44
+                },
+                {
+                  "localStartTime": "12:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 15
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 14
+                },
+                {
+                  "localStartTime": "12:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 34
+                },
+                {
+                  "localStartTime": "13:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 20
+                },
+                {
+                  "localStartTime": "13:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 40
+                },
+                {
+                  "localStartTime": "14:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 13
+                },
+                {
+                  "localStartTime": "14:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 40
+                },
+                {
+                  "localStartTime": "15:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 17
+                },
+                {
+                  "localStartTime": "15:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 13
+                },
+                {
+                  "localStartTime": "16:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 45,
+                  "capacityTaken": 40
+                }
+              ]
+            },
+            {
+              "date": "2021-03-30",
+              "slots": [
+                {
+                  "localStartTime": "08:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 30
+                },
+                {
+                  "localStartTime": "08:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "08:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "08:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 23
+                },
+                {
+                  "localStartTime": "09:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "09:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 21
+                },
+                {
+                  "localStartTime": "10:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 11
+                },
+                {
+                  "localStartTime": "10:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 24
+                },
+                {
+                  "localStartTime": "11:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "11:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 18
+                },
+                {
+                  "localStartTime": "12:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "12:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "13:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "13:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "14:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 22
+                },
+                {
+                  "localStartTime": "15:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "15:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "16:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 9
+                },
+                {
+                  "localStartTime": "16:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 112,
+                  "capacityTaken": 21
+                }
+              ]
+            },
+            {
+              "date": "2021-03-31",
+              "slots": [
+                {
+                  "localStartTime": "08:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 24
+                },
+                {
+                  "localStartTime": "08:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "08:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "08:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "09:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 18
+                },
+                {
+                  "localStartTime": "09:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "09:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "09:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "10:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 20
+                },
+                {
+                  "localStartTime": "10:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "10:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 19
+                },
+                {
+                  "localStartTime": "10:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "11:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 21
+                },
+                {
+                  "localStartTime": "11:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "11:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 6
+                },
+                {
+                  "localStartTime": "11:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "12:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 30
+                },
+                {
+                  "localStartTime": "12:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "12:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "12:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "13:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 14
+                },
+                {
+                  "localStartTime": "13:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 1
+                },
+                {
+                  "localStartTime": "13:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 7
+                },
+                {
+                  "localStartTime": "13:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "14:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 12
+                },
+                {
+                  "localStartTime": "14:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "14:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 4
+                },
+                {
+                  "localStartTime": "14:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 5
+                },
+                {
+                  "localStartTime": "15:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "15:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 3
+                },
+                {
+                  "localStartTime": "15:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 0
+                },
+                {
+                  "localStartTime": "16:00:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 20
+                },
+                {
+                  "localStartTime": "16:15:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 2
+                },
+                {
+                  "localStartTime": "16:30:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 10
+                },
+                {
+                  "localStartTime": "16:45:00",
+                  "durationSeconds": 900,
+                  "capacityTotal": 126,
+                  "capacityTaken": 25
+                }
+              ]
+            }
+          ]
         },
-        "hasAvailabilities": false
+        "hasAvailabilities": true
       },
-      {
-        "id": "a2ut0000006eUg1AAE",
-        "address": "6818 Avalon Blvd, Los Angeles, CA 90003",
-        "lat": 33.9775,
-        "long": -118.265,
-        "name": "St. John's Well Child and Family Center - Avalon",
+      "a2ut0000006eUjZAAU": {
+        "id": "a2ut0000006eUjZAAU",
+        "address": "1030 W. Maude Ave, Sunnyvale, CA, 94085",
+        "lat": 37.3936,
+        "long": -122.044,
+        "name": "El Camino Health - Maude Ave (Mass Vaccination Clinic)",
         "hours": [
-          { "days": ["fri"], "localStart": "08:30:00", "localEnd": "17:00:00" },
-          { "days": ["thu"], "localStart": "08:30:00", "localEnd": "17:00:00" },
-          { "days": ["wed"], "localStart": "08:30:00", "localEnd": "17:00:00" }
+          { "days": ["mon"], "localStart": "00:00:00", "localEnd": "23:59:00" }
         ],
-        "type": "OnlineBooking",
+        "type": "ThirdPartyBooking",
         "timezone": "America/Los_Angeles",
-        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "vaccineData": "W10=",
+        "externalURL": "https://mycare-scheduling.elcaminohospital.org/MyChart/SignupAndSchedule/EmbeddedSchedule?vt=2011015&dept=201001109&linksource=CommunityCOVIDVaccine-MyTurn",
         "availability": {
           "dose1Availabilities": [],
           "dose2Availabilities": []
         },
-        "hasAvailabilities": false
+        "hasAvailabilities": null,
+        "notes": "Unable to fetch availabilities. Visit external provider website for more information."
       },
-      {
-        "id": "a2ut0000006a9KKAAY",
-        "address": "The Forum: \r\n3900 W Manchester Blvd, \r\nInglewood, CA  90305",
-        "lat": 33.9582,
-        "long": -118.342,
-        "name": "Mega POD Forum - ALL ELIGIBLE GROUPS - Pfizer",
+      "a2ut0000006eUjUAAU": {
+        "id": "a2ut0000006eUjUAAU",
+        "address": "4150 N. First Street, San Jose, CA 95134",
+        "lat": 37.417,
+        "long": -121.954,
+        "name": "El Camino Health - First Street",
         "hours": [
-          { "days": ["sun"], "localStart": "09:30:00", "localEnd": "14:30:00" },
-          { "days": ["sat"], "localStart": "13:00:00", "localEnd": "16:00:00" },
-          { "days": ["thu"], "localStart": "14:00:00", "localEnd": "16:00:00" },
-          { "days": ["wed"], "localStart": "09:30:00", "localEnd": "16:00:00" },
-          { "days": ["tue"], "localStart": "13:00:00", "localEnd": "16:00:00" }
+          { "days": ["mon"], "localStart": "00:00:00", "localEnd": "23:59:00" }
         ],
-        "type": "OnlineBooking",
+        "type": "ThirdPartyBooking",
         "timezone": "America/Los_Angeles",
-        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "vaccineData": "W10=",
+        "externalURL": "https://mycare-scheduling.elcaminohospital.org/MyChart/SignupAndSchedule/EmbeddedSchedule?vt=2011015&dept=201001107&linksource=CommunityCOVIDVaccine-MyTurn",
         "availability": {
           "dose1Availabilities": [],
           "dose2Availabilities": []
         },
-        "hasAvailabilities": false
-      },
-      {
-        "id": "a2ut0000006a9LNAAY",
-        "address": "The Forum: \r\n3900 W Manchester Blvd., \r\nInglewood, CA  90305",
-        "lat": 33.9582,
-        "long": -118.342,
-        "name": "Mega POD Forum - FOOD & AGRICULTURE ONLY - Pfizer",
-        "hours": [
-          { "days": ["thu"], "localStart": "09:30:00", "localEnd": "16:00:00" },
-          { "days": ["tue"], "localStart": "09:30:00", "localEnd": "16:00:00" }
-        ],
-        "type": "OnlineBooking",
-        "timezone": "America/Los_Angeles",
-        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
-        "availability": {
-          "dose1Availabilities": [],
-          "dose2Availabilities": []
-        },
-        "hasAvailabilities": false
-      },
-      {
-        "id": "a2ut0000006a9K5AAI",
-        "address": "LA County Office of Education: 9300 Imperial Highway, Downey, CA 90242",
-        "lat": 33.9165,
-        "long": -118.129,
-        "name": "Mega POD LACOE/Downey - ALL ELIGIBLE GROUPS - Pfizer",
-        "hours": [
-          { "days": ["sun"], "localStart": "09:30:00", "localEnd": "14:30:00" },
-          { "days": ["sat"], "localStart": "13:00:00", "localEnd": "16:00:00" },
-          { "days": ["thu"], "localStart": "14:00:00", "localEnd": "16:00:00" },
-          { "days": ["wed"], "localStart": "09:30:00", "localEnd": "16:00:00" },
-          { "days": ["tue"], "localStart": "13:00:00", "localEnd": "16:00:00" }
-        ],
-        "type": "OnlineBooking",
-        "timezone": "America/Los_Angeles",
-        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
-        "availability": {
-          "dose1Availabilities": [],
-          "dose2Availabilities": []
-        },
-        "hasAvailabilities": false
-      },
-      {
-        "id": "a2ut0000006a9LDAAY",
-        "address": "LA County Office of Education: \r\n9300 Imperial Highway, \r\nDowney, CA 90242",
-        "lat": 33.9165,
-        "long": -118.129,
-        "name": "Mega POD LACOE/Downey - FOOD & AGRICULTURE ONLY - Pfizer",
-        "hours": [
-          { "days": ["thu"], "localStart": "09:30:00", "localEnd": "16:00:00" },
-          { "days": ["tue"], "localStart": "09:30:00", "localEnd": "16:00:00" }
-        ],
-        "type": "OnlineBooking",
-        "timezone": "America/Los_Angeles",
-        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
-        "availability": {
-          "dose1Availabilities": [],
-          "dose2Availabilities": []
-        },
-        "hasAvailabilities": false
-      },
-      {
-        "id": "a2ut0000006a9KvAAI",
-        "address": "Balboa Sports Complex: \r\n17015 Burbank Blvd., \r\nEncino, CA  91316",
-        "lat": 34.1736,
-        "long": -118.503,
-        "name": "Mega POD Balboa/Encino - FOOD & AGRICULTURE ONLY - Pfizer",
-        "hours": [
-          { "days": ["thu"], "localStart": "13:00:00", "localEnd": "15:00:00" },
-          { "days": ["tue"], "localStart": "09:30:00", "localEnd": "15:30:00" }
-        ],
-        "type": "OnlineBooking",
-        "timezone": "America/Los_Angeles",
-        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
-        "availability": {
-          "dose1Availabilities": [],
-          "dose2Availabilities": []
-        },
-        "hasAvailabilities": false
+        "hasAvailabilities": null,
+        "notes": "Unable to fetch availabilities. Visit external provider website for more information."
       }
-    ]
+    }
   }
 }

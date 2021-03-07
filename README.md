@@ -9,11 +9,13 @@ These services collect data for the CA state vaccination system (MyTurn) to expo
 ## MyTurn Data Collection Methodology & Assumptions
 
 ### Patient Eligibility
+
 As part of data collection, we are assuming eligibility for the vaccine and that vaccine availabilities are not segmented by patient cohort. The script can be adapted if inventory is in fact segmented, but collection would be much slower (as we would need to query each location for each possible cohort [16-49+Education, 16-49+FoodAgriculture, etc.]).
 
 We are using `75 and older` and `Other` in the query, as this will continue to remain an eligible profile. We just need a valid user cohort to look up availabilities for all locations.
 
 ### Geography Selection
+
 We are using hard-coded latitude and longitude values in the location geo search depending on the county. That is, to search for LA county locations we are querying for available locations from a fixed lat/long in the middle of downtown LA. This will give us a list of locations in and around LA for LA county. In some instances, the vaccine locations returned will be a different neighboring county if there are no locations in the actual county being searched.
 
 Refer to the `COUNTY_LAT_LONG` constant in [collector.js](./collector/collector.js) to see what values are being used.
@@ -46,7 +48,7 @@ We will do a cheap check to see if the word `moderna` is in the location title t
 
 ## Collector
 
-The collector's job is to fetch location metadata info and dose availabilities for a set of counties. The event message payload that the lambda function expects includes an array of counties. This allows us to fan-out and collect a subset of counties so that we aren't bombarding the MyTurn service. 
+The collector's job is to fetch location metadata info and dose availabilities for a set of counties. The event message payload that the lambda function expects includes an array of counties. This allows us to fan-out and collect a subset of counties so that we aren't bombarding the MyTurn service.
 
 We can collect `["Los Angeles", "San Diego"]` during one function invocation and `["Alameda", "Berkeley"]` in a separate invocation. This makes it easier to scale out collection.
 
@@ -55,15 +57,17 @@ During the function's execution, for each county, the collected data set will be
 If a client only wants to see LA county data, they could query the S3 resource: `/counties/losangeles.json`.
 
 ### Event Payload to Collector Lambda Function
+
 [Example Collector Event Payload [JSON]](./collector/events/collector-event.json)
 
 ## Reducer
 
-The reducer's job is to read each county artifact in S3 from the `/counties` prefix and merge all county data sets to produce one consolidated data set for the entire state. This is written to `data.json` in the root of the S3 bucket. 
+The reducer's job is to read each county artifact in S3 from the `/counties` prefix and merge all county data sets to produce one consolidated data set for the entire state. This is written to `data.json` in the root of the S3 bucket.
 
 This allows us to isolate the larger task of combining the entire state's data, such that we don't have one function invocation whose job is to do all of the work which could take a lot of time as we iterate through each individual county (and would cause high traffic against MyTurn).
 
 ### Event Payload to Reducer Lambda Function
+
 [Example Reducer Event Payload [JSON]](./reducer/events/reducer-event.json)
 
 ## Local Development
@@ -72,17 +76,19 @@ This allows us to isolate the larger task of combining the entire state's data, 
 
 ### AWS CLI
 
-Install the [aws-cli](https://aws.amazon.com/cli/) and [configure with your admin user](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html). For a simple environment for experimenting, you can create a IAM user for your AWS account that has Administrator access and use that AWS Access Key ID and Secret Access Key. Configure your local environment with `aws configure`. 
+Install the [aws-cli](https://aws.amazon.com/cli/) and [configure with your admin user](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html). For a simple environment for experimenting, you can create a IAM user for your AWS account that has Administrator access and use that AWS Access Key ID and Secret Access Key. Configure your local environment with `aws configure`.
 
 ### AWS SAM CLI
+
 The [AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) is a set of tools for serverless app development with AWS.
 
 > The AWS SAM CLI is an extension of the AWS CLI that adds functionality for building and testing Lambda applications. It uses Docker to run your functions in an Amazon Linux environment that matches Lambda. It can also emulate your application's build environment and API.
 >
 > To use the AWS SAM CLI, you need the following tools:
-> * AWS SAM CLI - [Install the AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html).
-> * Node.js - [Install Node.js 14](https://nodejs.org/en/), including the npm package management tool. (Install `nvm` to easily manage multiple versions)
-> * Docker - [Install Docker community edition](https://hub.docker.com/search/?type=edition&offering=community).
+>
+> - AWS SAM CLI - [Install the AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html).
+> - Node.js - [Install Node.js 14](https://nodejs.org/en/), including the npm package management tool. (Install `nvm` to easily manage multiple versions)
+> - Docker - [Install Docker community edition](https://hub.docker.com/search/?type=edition&offering=community).
 
 #### AWS SAM CLI Usage
 
@@ -95,66 +101,83 @@ sam build
 ```
 
 Then invoke the function locally with
+
 ```
 sam local invoke -e events/collector-event.json myVaccineCollector
 ```
- or
- ```
+
+or
+
+```
 sam local invoke -e events/reducer-event.json myVaccineReducer
 ```
 
 You can attach a debugger with this command (Refer to [Debugging Lambda Functions Locally](https://www.moesif.com/blog/technical/serverless/debug-lambda-functions-locally-with-the-sam-cli-and-vscode/)):
+
 ```
 sam local invoke -d 9999 -e events/collector-event.json myVaccineCollector
 ```
 
 ### Create and Update your Lambda function in AWS
+
 Ensure you have `aws-cli` installed and it's configured with your AWS environment (credentials configured in your local system: verify with `$ vi ~/.aws/credentials`)
 
 #### Creating Collector Function for the first time programmatically
-1. cd into the collector module `cd collector` 
+
+1. cd into the collector module `cd collector`
 2. Run `npm run-script build` (this will run `npm install` and package the build artifacts into a zip file which we will upload to AWS)
-3. Create the function using aws-cli. Ensure your you use the correct role ARN that you set up. We are defining some function defaults like: 
-    * function should time out after 45 seconds 
-    * the function entrypoint is in the collector.js `handler` function 
-    * function should deploy with nodeJS v14
+3. Create the function using aws-cli. Ensure your you use the correct role ARN that you set up. We are defining some function defaults like:
+   - function should time out after 45 seconds
+   - the function entrypoint is in the collector.js `handler` function
+   - function should deploy with nodeJS v14
+
 ```
 aws lambda create-function --function-name collector \
 --zip-file fileb://collector.zip --handler collector.handler --runtime nodejs14.x \
---role arn:aws:iam::1234567890:role/my-vaccine-data-prod --timeout 45 
+--role arn:aws:iam::1234567890:role/my-vaccine-data-prod --timeout 45
 ```
 
 #### Creating Reducer Function for the first time programmatically
+
 _Same process as with collector_
-1. cd into the reducer module `cd reducer` 
+
+1. cd into the reducer module `cd reducer`
 2. Run `npm run-script build` (this will run `npm install` and package the build artifacts into a zip file which we will upload to AWS)
-3. Create the function using aws-cli. Ensure your you use the correct role ARN that you set up. We are defining some function defaults like: 
-    * function should time out after 45 seconds 
-    * the function entrypoint is in the reducer.js `handler` function 
-    * function should deploy with nodeJS v14
+3. Create the function using aws-cli. Ensure your you use the correct role ARN that you set up. We are defining some function defaults like:
+   - function should time out after 45 seconds
+   - the function entrypoint is in the reducer.js `handler` function
+   - function should deploy with nodeJS v14
+
 ```
 aws lambda create-function --function-name reducer \
 --zip-file fileb://reducer.zip --handler reducer.handler --runtime nodejs14.x \
---role arn:aws:iam::1234567890:role/my-vaccine-data-prod --timeout 45 
+--role arn:aws:iam::1234567890:role/my-vaccine-data-prod --timeout 45
 ```
 
 #### Updating functions programmatically
+
 If you've made changes to your local source code and want to push the changes up and deploy to AWS so that your lambda function in prod is updated, use the aws-cli `update-function-code` command after re-building your zip package:
 
 ```
 aws lambda update-function-code --function-name my-vaccine-collector --zip-file fileb://collector.zip
 ```
+
 or
+
 ```
 aws lambda update-function-code --function-name my-vaccine-reducer --zip-file fileb://reducer.zip
 ```
 
 Alternatively, you can also just run these two commands and everything will be automatically run (make sure you're in either the `collector/` or `reducer/` directories):
-1) Build
+
+1. Build
+
 ```
 npm run-script build
 ```
-2) Deploy
+
+2. Deploy
+
 ```
 npm run-script deploy
 ```
@@ -167,27 +190,23 @@ First, ensure you have an IAM policy defined for our lambda function's role to u
 
 ```json
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "logs:PutLogEvents",
-                "logs:CreateLogGroup",
-                "logs:CreateLogStream"
-            ],
-            "Resource": "arn:aws:logs:*:*:*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "s3:GetObject",
-                "s3:PutObject",
-                "s3:ListBucket"
-            ],
-            "Resource": "arn:aws:s3:::my-vaccine-data/*"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:PutLogEvents",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream"
+      ],
+      "Resource": "arn:aws:logs:*:*:*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject", "s3:ListBucket"],
+      "Resource": "arn:aws:s3:::my-vaccine-data/*"
+    }
+  ]
 }
 ```
 
@@ -197,13 +216,14 @@ Create a role (`my-vaccine-data-prod` for example) and attach the policy we just
 
 ### AWS S3 Bucket
 
-Set up a S3 bucket in your account that you want to use. Replace `S3_BUCKET_NAME_HERE` in the example `collector-event.json` and `reducer-event.json` payloads. 
+Set up a S3 bucket in your account that you want to use. Replace `S3_BUCKET_NAME_HERE` in the example `collector-event.json` and `reducer-event.json` payloads.
 
 #### Bucket Structure
 
 Assuming our bucket name is `my-vaccine-data` for your deployment.
 
 The structure for this project is:
+
 ```
 my-vaccine-data
 | data.json
@@ -221,29 +241,26 @@ This allows for our Lambda Function (whose execution context will assume that ro
 
 ```json
 {
-    "Version": "2012-10-17",
-    "Id": "ExamplePolicy",
-    "Statement": [
-        {
-            "Sid": "VaccineLambdaFunctionReadWrite",
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::1234567890:role/my-vaccine-data-role"
-            },
-            "Action": [
-                "s3:GetObject",
-                "s3:PutObject"
-            ],
-            "Resource": "arn:aws:s3:::my-vaccine-data/*"
-        },
-        {
-            "Sid": "PublicReadGetObject",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::my-vaccine-data/*"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Id": "ExamplePolicy",
+  "Statement": [
+    {
+      "Sid": "VaccineLambdaFunctionReadWrite",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::1234567890:role/my-vaccine-data-role"
+      },
+      "Action": ["s3:GetObject", "s3:PutObject"],
+      "Resource": "arn:aws:s3:::my-vaccine-data/*"
+    },
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::my-vaccine-data/*"
+    }
+  ]
 }
 ```
 
@@ -256,8 +273,9 @@ You can alternatively set this up directly in the AWS console using the UI.
 #### `my-vaccine-collector` and `my-vaccine-reducer`
 
 Ensure that you deploy the `collector` or `reducer` package to separate Lambda Functions and that they are running:
+
 - Node.js 14.x Runtime
-- Handler is defined as `collector.handler` or `reducer.handler` 
+- Handler is defined as `collector.handler` or `reducer.handler`
 - Under Configuration > Permissions, the execution role is set to the role you created during setup (`my-vaccine-data-prod` for example)
 - Ensure timeout is set to something higher than the default 3 seconds
 
@@ -266,6 +284,7 @@ Ensure that you deploy the `collector` or `reducer` package to separate Lambda F
 To have your services run automatically, create a CloudWatch rule to trigger your lambda functions on a schedule.
 
 In CloudWatch:
+
 1. Create a Rule
 2. Select **Schedule** as Event Source
 3. Use a fixed rate or a cron expression to specify when the job should run.
@@ -278,39 +297,87 @@ In CloudWatch:
 ## Sample JSON File Payloads
 
 ### Per-County Example: Los Angeles - `losangeles.json`
+
 This type of file will be in S3 under the `counties/` prefix and is a JSON file for each county for which data was collected.
 
 ```json
 {
   "Los Angeles": {
     "data_collection_time": "2021-03-03T03:59:08.772Z",
-    "locations": [
-      {
-        "id": "a2ut0000006eUgGAAU",
-        "address": "1910 Magnolia Ave, Suite 101, Los Angeles, CA 90007",
-        "lat": 34.0397,
-        "long": -118.286,
-        "name": "St. John's Well Child and Family Center - Magnolia",
+    "locations": {
+      "a2ut0000006a92gAAA": {
+        "id": "a2ut0000006a92gAAA",
+        "address": "5151 State University Drive Los Angeles, CA 90032",
+        "lat": 34.062,
+        "long": -118.174,
+        "name": "Los Angeles - CalOES (Walk Up 2a)",
         "hours": [
           {
-            "days": ["fri"],
-            "localStart": "17:00:00",
-            "localEnd": "19:15:00"
-          },
-          {
-            "days": ["thu"],
-            "localStart": "17:00:00",
-            "localEnd": "19:15:00"
-          },
-          {
             "days": ["wed"],
-            "localStart": "17:00:00",
-            "localEnd": "19:15:00"
+            "localStart": "09:00:00",
+            "localEnd": "19:00:00"
           },
           {
             "days": ["tue"],
-            "localStart": "17:00:00",
-            "localEnd": "19:15:00"
+            "localStart": "09:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["mon"],
+            "localStart": "09:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["sun"],
+            "localStart": "09:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["sat"],
+            "localStart": "09:00:00",
+            "localEnd": "19:00:00"
+          }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
+      },
+      "a2ut0000006eUhsAAE": {
+        "id": "a2ut0000006eUhsAAE",
+        "address": "5151 State University Drive Los Angeles, CA 90032",
+        "lat": 34.062,
+        "long": -118.174,
+        "name": "Los Angeles - CalOES (Drive Thru 3)",
+        "hours": [
+          {
+            "days": ["wed"],
+            "localStart": "09:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["tue"],
+            "localStart": "09:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["mon"],
+            "localStart": "09:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["sun"],
+            "localStart": "09:00:00",
+            "localEnd": "19:00:00"
+          },
+          {
+            "days": ["sat"],
+            "localStart": "09:00:00",
+            "localEnd": "19:00:00"
           }
         ],
         "type": "OnlineBooking",
@@ -319,50 +386,130 @@ This type of file will be in S3 under the `counties/` prefix and is a JSON file 
         "availability": {
           "dose1Availabilities": [
             {
-              "date": "2021-03-05",
+              "date": "2021-03-08",
               "slots": [
                 {
-                  "localStartTime": "17:05:00",
-                  "durationSeconds": 300
+                  "localStartTime": "11:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 57,
+                  "capacityTaken": 56
+                }
+              ]
+            },
+            {
+              "date": "2021-03-09",
+              "slots": [
+                {
+                  "localStartTime": "13:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 57,
+                  "capacityTaken": 55
                 },
                 {
-                  "localStartTime": "18:45:00",
-                  "durationSeconds": 300
+                  "localStartTime": "14:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 57,
+                  "capacityTaken": 55
                 }
               ]
             }
           ],
           "dose2Availabilities": [
             {
-              "date": "2021-03-26",
+              "date": "2021-03-29",
               "slots": [
                 {
-                  "localStartTime": "17:35:00",
-                  "durationSeconds": 300
+                  "localStartTime": "13:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 57,
+                  "capacityTaken": 55
+                }
+              ]
+            },
+            {
+              "date": "2021-03-30",
+              "slots": [
+                {
+                  "localStartTime": "13:50:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 57,
+                  "capacityTaken": 47
+                },
+                {
+                  "localStartTime": "14:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 57,
+                  "capacityTaken": 56
+                },
+                {
+                  "localStartTime": "14:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 57,
+                  "capacityTaken": 37
+                }
+              ]
+            },
+            {
+              "date": "2021-03-31",
+              "slots": [
+                {
+                  "localStartTime": "12:20:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 13,
+                  "capacityTaken": 12
+                },
+                {
+                  "localStartTime": "17:10:00",
+                  "durationSeconds": 600,
+                  "capacityTotal": 13,
+                  "capacityTaken": 12
                 }
               ]
             }
           ]
         },
         "hasAvailabilities": true
+      },
+      "a2ut0000006a9LmAAI": {
+        "id": "a2ut0000006a9LmAAI",
+        "address": "The Forum: \r\n3900 W Manchester Blvd., \r\nInglewood, CA  90305",
+        "lat": 33.9582,
+        "long": -118.342,
+        "name": "Mega POD Forum - INDEPENDENT SCHOOLS ONLY- Pfizer",
+        "hours": [
+          {
+            "days": ["sun"],
+            "localStart": "14:30:00",
+            "localEnd": "16:00:00"
+          }
+        ],
+        "type": "OnlineBooking",
+        "timezone": "America/Los_Angeles",
+        "vaccineData": "WyJhM3F0MDAwMDAwMDFBZExBQVUiXQ==",
+        "availability": {
+          "dose1Availabilities": [],
+          "dose2Availabilities": []
+        },
+        "hasAvailabilities": false
       }
-    ]
+    }
   }
 }
 ```
 
 ### State-wide Example: California - `data.json`
+
 This type of file will be in S3 at the root of the bucket. It will have a key for every county that a collection cycle was run for. It is a merged data set from all the counties in the s3 prefix `counties/`.
 
 ```json
 {
   "Alameda": {
     "data_collection_time": "2021-03-03T01:59:00.000Z",
-    "locations": []
+    "locations": {}
   },
   "Los Angeles": {
     "data_collection_time": "2021-03-03T03:59:08.772Z",
-    "locations": []
+    "locations": {}
   }
 }
 ```
