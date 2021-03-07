@@ -14,7 +14,9 @@ const getObject = async (key, bucket) => {
       })
       .promise();
 
-    return file.Body.toString("utf-8");
+    const unzippedFile = zlib.gunzipSync(new Buffer.from(file.Body)).toString();
+
+    return JSON.parse(unzippedFile);
   } catch (error) {
     console.log("Error getting object: ", error);
   }
@@ -53,8 +55,7 @@ exports.handler = async (event, context, callback) => {
       const filename = obj.Key;
       console.log(`Processing ${filename} county file.`);
 
-      const file = await getObject(filename, event.sourceBucket);
-      return JSON.parse(file);
+      return await getObject(filename, event.sourceBucket);
     })
   );
 
