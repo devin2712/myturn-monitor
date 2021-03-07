@@ -7,9 +7,9 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.857.0",
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "zlib": "^1.0.5"
   },
-  "devDependencies": {},
   "scripts": {
     "build": "npm install && npm prune --production && zip -r collector.zip collector.js node_modules package.json package-lock.json",
     "deploy": "aws lambda update-function-code --function-name my-vaccine-collector --zip-file fileb://collector.zip"

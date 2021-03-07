@@ -1,5 +1,6 @@
 const AWS = require("aws-sdk");
 const axios = require("axios");
+const zlib = require("zlib");
 const s3 = new AWS.S3();
 
 // Logging how many API calls we are making outbound to MyTurn for info.
@@ -68,6 +69,25 @@ const COUNTY_LAT_LONG = {
   Ventura: [34.3435092, -119.2956042],
   Yolo: [38.7318481, -121.8077431],
   Yuba: [39.1254479, -121.5855207],
+};
+
+// Returns object from S3
+const getObject = async (key, bucket) => {
+  try {
+    const file = await s3
+      .getObject({
+        Bucket: bucket,
+        Key: key,
+        ResponseContentType: "application/json",
+      })
+      .promise();
+
+    const unzippedFile = zlib.gunzipSync(new Buffer.from(file.Body)).toString();
+
+    return JSON.parse(unzippedFile);
+  } catch (error) {
+    console.log("Error getting object: ", error);
+  }
 };
 
 /**
@@ -579,9 +599,16 @@ const getCountyData = async (todayDate, countyName, vaccineData) => {
     })
   );
 
+  // Reducing locations array to an object with keys where the key is the locationId
+  // This makes it easier to read this data structure as a cache later on
+  const reducedLocations = locationsWithAvailability.reduce((memo, loc) => {
+    memo[loc.id] = loc;
+    return memo;
+  }, {});
+
   return {
     data_collection_time: new Date().toISOString(),
-    locations: locationsWithAvailability,
+    locations: reducedLocations,
   };
 };
 
@@ -617,19 +644,71 @@ exports.handler = async (event, context, callback) => {
         return Promise.resolve();
       }
 
-      const countyFile = { [countyName]: countyData };
       // Remove spaces for filename. "Los Angeles" => "losangeles.json"
       const countyFilename =
         countyName.toLowerCase().replace(/\s+/g, "") + ".json";
+
+      // Get existing file from S3 for the county, if it exists.
+      // The purpose of this is so we can retain locations over time, as MyTurn may
+      // stop reporting the location altogether if there are no availabilities.
+      // We can leverage our own 'cache' to just reset the availability status but still
+      // be able to show location name/location/etc.
+      let locationCache = await getObject(
+        `counties/${countyFilename}`,
+        event.destinationBucket
+      );
+      let countyFile;
+      if (locationCache) {
+        console.log(`Location cache found for ${countyName}, so reusing locations...`);
+        // If a file already exists, we want to:
+        //  - update any locations that MyTurn is no longer reporting on by:
+        //    for each loc in locationCache:
+        //        if loc is not a key in countyData.locations {}:
+        //          reset hours to [], reset availability to {}, reset hasAvailabilities to false
+        Object.entries(locationCache[countyName].locations).forEach(([key]) => {
+          if (!countyData.locations[key]) {
+            locationCache[countyName].locations[key].hours = [];
+            locationCache[countyName].locations[key].hasAvailabilities = false;
+            locationCache[countyName].locations[key].availability = {
+              dose1Availabilities: [],
+              dose2Availabilities: [],
+            };
+          }
+        });
+
+        // then update data: loop over each countyData.locations (the newly fetched results) and override the cache
+        Object.entries(countyData.locations).forEach(([key]) => {
+          locationCache[countyName].locations[key] = countyData.locations[key];
+        });
+
+        // Update timestamp
+        locationCache[countyName].data_collection_time =
+          countyData.data_collection_time;
+
+        countyFile = locationCache;
+      } else {
+        console.log(`No location cache found, so initializing for ${countyName}`);
+        countyFile = { [countyName]: countyData };
+      }
+
+      const buffer = Buffer.from(JSON.stringify(countyFile), "utf-8");
+      const compressedData = zlib.gzipSync(buffer, (err, response) => {
+        if (err) {
+          console.log(err);
+        } else {
+          return response;
+        }
+      });
 
       // Upload county-specific data to /counties s3 bucket
       try {
         const destinationParams = {
           Bucket: event.destinationBucket,
           Key: `counties/${countyFilename}`,
-          Body: JSON.stringify(countyFile),
+          Body: compressedData,
           ContentType: "application/json; charset=utf-8",
           CacheControl: "max-age=60",
+          ContentEncoding: "gzip",
         };
 
         await s3.putObject(destinationParams).promise();
