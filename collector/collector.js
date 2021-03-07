@@ -707,7 +707,7 @@ exports.handler = async (event, context, callback) => {
           Key: `counties/${countyFilename}`,
           Body: compressedData,
           ContentType: "application/json; charset=utf-8",
-          CacheControl: "max-age=120",
+          CacheControl: "max-age=600",
           ContentEncoding: "gzip",
         };
 

@@ -85,7 +85,7 @@ exports.handler = async (event, context, callback) => {
       Key: "data.json",
       Body: compressedData,
       ContentType: "application/json; charset=utf-8",
-      CacheControl: "max-age=600",
+      CacheControl: "max-age=900",
       ContentEncoding: "gzip",
     };
 
