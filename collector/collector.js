@@ -120,6 +120,16 @@ const fetchVaccineData = async () => {
         type: "single-select",
       },
       {
+        id: "q.screening.underlying.health.condition",
+        value: "Yes",
+        type: "single-select",
+      },
+      {
+        id: "q.screening.disability",
+        value: "Yes",
+        type: "single-select",
+      },
+      {
         id: "q.screening.eligibility.industry",
         value: "Other",
         type: "single-select",
@@ -127,11 +137,6 @@ const fetchVaccineData = async () => {
       {
         id: "q.screening.eligibility.county",
         value: "Alameda",
-        type: "single-select",
-      },
-      {
-        id: "q.screening.underlying.health.condition",
-        value: "Yes",
         type: "single-select",
       },
       {

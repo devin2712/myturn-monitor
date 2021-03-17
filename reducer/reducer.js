@@ -91,6 +91,20 @@ exports.handler = async (event, context, callback) => {
 
     await s3.putObject(destinationParams).promise();
     console.log("Finished upload results to S3");
+
+    // Upload backup for each day
+    const backupParams = {
+      Bucket: event.destinationBucket,
+      Key: `backup/${new Date().toISOString().slice(0, 10)}-data.json`,
+      Body: compressedData,
+      ContentType: "application/json; charset=utf-8",
+      CacheControl: "max-age=31536000",
+      ContentEncoding: "gzip",
+    };
+
+    await s3.putObject(backupParams).promise();
+    console.log("Finished upload backup results to S3");
+
     callback(null, {
       statusCode: 200,
       body: `Successfully uploaded consolidated update to ${event.destinationBucket}/data.json`,
