@@ -110,6 +110,11 @@ const fetchVaccineData = async () => {
         type: "multi-select",
       },
       {
+        id: "q.screening.accuracy.attestation",
+        value: ["q.screening.accuracy.attestation"],
+        type: "multi-select",
+      },
+      {
         id: "q.screening.privacy.statement",
         value: ["q.screening.privacy.statement"],
         type: "multi-select",
